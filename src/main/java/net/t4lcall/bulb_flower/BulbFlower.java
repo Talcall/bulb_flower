@@ -11,8 +11,5 @@ public class BulbFlower implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
-		LOGGER.info("Hello Fabric world!");
 	}
 }
