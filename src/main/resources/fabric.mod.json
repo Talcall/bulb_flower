@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bulb_flower",
+	"version": "${version}",
+	"name": "bulb_flower",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Talcall"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "None",
+	"icon": "assets/bulb_flower/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.t4lcall.bulb_flower.BulbFlower"
+		],
+		"client": [
+			"net.t4lcall.bulb_flower.BulbFlowerClient"
+		],
+		"fabric-datagen": [
+			"net.t4lcall.bulb_flower.Bulb_FlowerDataGenerator"
+		]
+	},
+	"mixins": [
+		"bulb_flower.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.t4lcall.bulb_flower.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
