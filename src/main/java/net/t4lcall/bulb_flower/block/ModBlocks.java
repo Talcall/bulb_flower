@@ -14,10 +14,25 @@ import net.t4lcall.bulb_flower.BulbFlower;
 public class ModBlocks {
     public static final Block BULB_ROOTS = registerBlock("bulb_roots",
             new TransparentBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS)));
-    public static final Block ROOTED_END_STONE = registerBlock("rooted_end_stone",
-            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
     public static final Block BULB_PLANKS = registerBlock("bulb_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block BULB_STAIRS = registerBlock("bulb_stairs",
+            new StairsBlock(ModBlocks.BULB_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block BULB_SLAB = registerBlock("bulb_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block BULB_BUTTON = registerBlock("bulb_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 15, true));
+    public static final Block BULB_PRESSURE_PLATE = registerBlock("bulb_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+    public static final Block BULB_FENCE = registerBlock("bulb_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block BULB_FENCE_GATE = registerBlock("bulb_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), WoodType.OAK));
+    public static final Block BULB_DOOR = registerBlock("bulb_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+    public static final Block BULB_TRAPDOOR = registerBlock("bulb_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
     public static final Block BULB_ROOTLOG = registerBlock("bulb_rootlog",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
     public static final Block BULB_ROOTWOOD = registerBlock("bulb_rootwood",
@@ -28,8 +43,10 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
     public static final Block BULB_SAPLING = registerBlock("bulb_sapling",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block ROOTED_END_STONE = registerBlock("rooted_end_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
     public static final Block BULB_PISTIL = registerBlock("bulb_pistil",
-            new PlantBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS)));
+            new PlantBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, name), block);
