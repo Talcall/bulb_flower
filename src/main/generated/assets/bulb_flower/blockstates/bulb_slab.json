@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bulb_flower:block/bulb_slab"
+    },
+    "type=double": {
+      "model": "bulb_flower:block/bulb_planks"
+    },
+    "type=top": {
+      "model": "bulb_flower:block/bulb_slab_top"
+    }
+  }
+}

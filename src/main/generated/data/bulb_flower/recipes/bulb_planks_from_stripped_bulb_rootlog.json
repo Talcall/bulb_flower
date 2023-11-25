@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "bulb_planks",
+  "ingredients": [
+    {
+      "item": "bulb_flower:stripped_bulb_rootlog"
+    }
+  ],
+  "result": {
+    "item": "bulb_flower:bulb_planks"
+  }
+}

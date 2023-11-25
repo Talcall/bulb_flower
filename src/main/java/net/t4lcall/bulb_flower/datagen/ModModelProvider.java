@@ -14,23 +14,21 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool bulbPlanks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BULB_PLANKS);
-        blockStateModelGenerator.registerLog(ModBlocks.BULB_ROOTLOG);
-        blockStateModelGenerator.registerLog(ModBlocks.BULB_ROOTWOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BULB_ROOTLOG);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BULB_ROOTWOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.BULB_ROOTS);
-        blockStateModelGenerator.registerLog(ModBlocks.ROOTED_END_STONE);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BULB_ROOTWOOD);
-
+        //blockStateModelGenerator.registerLog(ModBlocks.BULB_ROOTLOG);
+        //blockStateModelGenerator.registerLog(ModBlocks.BULB_ROOTWOOD);
+        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BULB_ROOTLOG);
+        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BULB_ROOTWOOD);
+        //blockStateModelGenerator.registerLog(ModBlocks.BULB_ROOTS);
+        //blockStateModelGenerator.registerLog(ModBlocks.ROOTED_END_STONE);
+        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BULB_ROOTWOOD);
         bulbPlanks.stairs(ModBlocks.BULB_STAIRS);
         bulbPlanks.slab(ModBlocks.BULB_SLAB);
         bulbPlanks.button(ModBlocks.BULB_BUTTON);
         bulbPlanks.fence(ModBlocks.BULB_FENCE);
         bulbPlanks.fenceGate(ModBlocks.BULB_FENCE_GATE);
         bulbPlanks.pressurePlate(ModBlocks.BULB_PRESSURE_PLATE);
-
         blockStateModelGenerator.registerDoor(ModBlocks.BULB_DOOR);
-        blockStateModelGenerator.registerDoor(ModBlocks.BULB_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.BULB_TRAPDOOR);
     }
 
     @Override

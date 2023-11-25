@@ -26,6 +26,14 @@ public class ModItems {
         entries.add(ModBlocks.STRIPPED_BULB_ROOTLOG);
         entries.add(ModBlocks.STRIPPED_BULB_ROOTWOOD);
         entries.add(ModBlocks.BULB_PISTIL);
+        entries.add(ModBlocks.BULB_TRAPDOOR);
+        entries.add(ModBlocks.BULB_DOOR);
+        entries.add(ModBlocks.BULB_SLAB);
+        entries.add(ModBlocks.BULB_STAIRS);
+        entries.add(ModBlocks.BULB_BUTTON);
+        entries.add(ModBlocks.BULB_PRESSURE_PLATE);
+        entries.add(ModBlocks.BULB_FENCE);
+        entries.add(ModBlocks.BULB_FENCE_GATE);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BulbFlower.MOD_ID, name), item);

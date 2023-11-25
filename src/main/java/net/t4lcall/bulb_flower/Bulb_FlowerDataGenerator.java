@@ -2,9 +2,7 @@ package net.t4lcall.bulb_flower;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.t4lcall.bulb_flower.datagen.ModLootTableProvider;
-import net.t4lcall.bulb_flower.datagen.ModModelProvider;
-import net.t4lcall.bulb_flower.datagen.ModRecipeProvider;
+import net.t4lcall.bulb_flower.datagen.*;
 
 public class Bulb_FlowerDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -12,7 +10,7 @@ public class Bulb_FlowerDataGenerator implements DataGeneratorEntrypoint {
 	FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 	pack.addProvider(ModBlockTagProvider::new);
-	pack.addProvider(ModItemTagProvider::new);
+	//pack.addProvider(ModItemTagProvider::new);
 	pack.addProvider(ModLootTableProvider::new);
 	pack.addProvider(ModModelProvider::new);
 	pack.addProvider(ModRecipeProvider::new);
