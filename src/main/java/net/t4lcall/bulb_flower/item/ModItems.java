@@ -19,6 +19,7 @@ public class ModItems {
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.BULB_SAPLING);
         entries.add(ModBlocks.BULB_ROOTS);
+        entries.add(ModBlocks.ROOTED_END_STONE);
         entries.add(ModBlocks.BULB_PLANKS);
         entries.add(ModBlocks.BULB_ROOTLOG);
         entries.add(ModBlocks.BULB_ROOTWOOD);

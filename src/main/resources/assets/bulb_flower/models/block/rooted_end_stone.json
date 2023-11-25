@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "bulb_flower:block/rooted_end_stone_top",
+    "side": "bulb_flower:block/rooted_end_stone_side"
+  }
+}

@@ -14,6 +14,8 @@ import net.t4lcall.bulb_flower.BulbFlower;
 public class ModBlocks {
     public static final Block BULB_ROOTS = registerBlock("bulb_roots",
             new TransparentBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS)));
+    public static final Block ROOTED_END_STONE = registerBlock("rooted_end_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
     public static final Block BULB_PLANKS = registerBlock("bulb_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block BULB_ROOTLOG = registerBlock("bulb_rootlog",
@@ -27,7 +29,7 @@ public class ModBlocks {
     public static final Block BULB_SAPLING = registerBlock("bulb_sapling",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block BULB_PISTIL = registerBlock("bulb_pistil",
-            new PlantBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES)));
+            new PlantBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, name), block);
