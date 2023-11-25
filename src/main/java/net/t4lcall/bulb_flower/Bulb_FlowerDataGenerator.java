@@ -2,6 +2,7 @@ package net.t4lcall.bulb_flower;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.t4lcall.bulb_flower.datagen.ModLootTableProvider;
 import net.t4lcall.bulb_flower.datagen.ModModelProvider;
 import net.t4lcall.bulb_flower.datagen.ModRecipeProvider;
 
