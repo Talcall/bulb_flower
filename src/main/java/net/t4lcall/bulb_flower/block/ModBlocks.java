@@ -18,13 +18,9 @@ import net.t4lcall.bulb_flower.BulbFlower;
 
 public class ModBlocks {
 
-    public static final Block BULB_ROOTS = new Block(FabricBlockSettings.create().nonOpaque());
-    @Environment(EnvType.CLIENT)
-    public class BulbFlowerClient implements ClientModInitializer {
-        public void onInitializeClient() {
-            BlockRenderLayerMap.INSTANCE.putBlock(BulbFlower.BULB_ROOTS, RenderLayer.getCutout());
-        }
-    }
+    public static final Block BULB_ROOTS = registerBlock("bulb_roots",
+            new Block(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS)));
+
 
     public static final Block BULB_PLANKS = registerBlock("bulb_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
