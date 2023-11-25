@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.t4lcall.bulb_flower.BulbFlower;
+import net.t4lcall.bulb_flower.block.ModBlocks;
 
 
 public class ModItems {
@@ -17,6 +18,7 @@ public class ModItems {
 
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
         entries.add(BULB_SAPLING);
+        entries.add(ModBlocks.BULB_ROOTS);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BulbFlower.MOD_ID, name), item);
