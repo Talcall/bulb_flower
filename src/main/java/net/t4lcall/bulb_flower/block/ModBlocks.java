@@ -30,9 +30,9 @@ public class ModBlocks {
     public static final Block BULB_FENCE_GATE = registerBlock("bulb_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), WoodType.OAK));
     public static final Block BULB_DOOR = registerBlock("bulb_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
     public static final Block BULB_TRAPDOOR = registerBlock("bulb_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
     public static final Block BULB_ROOTLOG = registerBlock("bulb_rootlog",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
     public static final Block BULB_ROOTWOOD = registerBlock("bulb_rootwood",
