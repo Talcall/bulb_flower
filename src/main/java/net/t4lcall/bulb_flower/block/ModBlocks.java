@@ -16,6 +16,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS)));
     public static final Block BULB_PLANKS = registerBlock("bulb_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block BULB_ROOTLOG = registerBlock("bulb_rootlog",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, name), block);

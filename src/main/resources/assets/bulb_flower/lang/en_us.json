@@ -1,5 +1,6 @@
 {
   "item.bulb_flower.bulb_sapling": "Bulb Burgeon",
   "block.bulb_flower.bulb_roots": "Bulb Roots",
-  "block.bulb_flower.bulb_planks": "Bulb Roots"
+  "block.bulb_flower.bulb_planks": "Bulb Roots",
+  "block.bulb_flower.bulb_rootlog": "Bulb Lignin"
 }
