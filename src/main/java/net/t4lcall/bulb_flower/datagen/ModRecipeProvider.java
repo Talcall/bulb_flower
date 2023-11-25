@@ -18,10 +18,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BULB_ROOTLOG, ModBlocks.BULB_ROOTS);
         offerBarkBlockRecipe(exporter, ModBlocks.BULB_ROOTWOOD, ModBlocks.BULB_ROOTLOG);
         offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_BULB_ROOTWOOD, ModBlocks.STRIPPED_BULB_ROOTLOG);
-        offerShapelessRecipe(exporter, ModBlocks.BULB_PLANKS, ModBlocks.BULB_ROOTLOG, "bulb_planks", 1);
-        offerShapelessRecipe(exporter, ModBlocks.BULB_PLANKS, ModBlocks.STRIPPED_BULB_ROOTLOG, "bulb_planks", 1);
-        offerShapelessRecipe(exporter, ModBlocks.BULB_PLANKS, ModBlocks.BULB_ROOTWOOD, "bulb_planks", 1);
-        offerShapelessRecipe(exporter, ModBlocks.BULB_PLANKS, ModBlocks.STRIPPED_BULB_ROOTWOOD, "bulb_planks", 1);
+        offerShapelessRecipe(exporter, ModBlocks.BULB_PLANKS, ModBlocks.BULB_ROOTLOG, "bulb_planks", 4);
+        offerShapelessRecipe(exporter, ModBlocks.BULB_PLANKS, ModBlocks.STRIPPED_BULB_ROOTLOG, "bulb_planks", 4);
+        offerShapelessRecipe(exporter, ModBlocks.BULB_PLANKS, ModBlocks.BULB_ROOTWOOD, "bulb_planks", 4);
+        offerShapelessRecipe(exporter, ModBlocks.BULB_PLANKS, ModBlocks.STRIPPED_BULB_ROOTWOOD, "bulb_planks", 4);
         offerShapelessRecipe(exporter, Items.MAGENTA_DYE, ModBlocks.BULB_SAPLING, "magenta_dye", 1);
         //offerShapelessRecipe(exporter, Items.PURPLE_DYE, ModBlocks.BULB_FROND, "purple_dye", 2);
         offerShapelessRecipe(exporter, Items.PINK_DYE, ModBlocks.BULB_PISTIL, "pink_dye", 2);
