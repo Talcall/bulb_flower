@@ -19,6 +19,7 @@ public class ModItems {
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
         entries.add(BULB_SAPLING);
         entries.add(ModBlocks.BULB_ROOTS);
+        entries.add(ModBlocks.BULB_PLANKS);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BulbFlower.MOD_ID, name), item);
