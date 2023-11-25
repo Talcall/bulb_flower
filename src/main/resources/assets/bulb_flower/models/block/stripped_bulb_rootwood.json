@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "bulb_flower:block/stripped_bulb_rootlog_side"
+  }
+}

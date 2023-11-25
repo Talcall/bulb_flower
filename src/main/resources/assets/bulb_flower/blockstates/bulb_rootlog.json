@@ -1,9 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "bulb_flower:block/bulb_rootlog_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "bulb_flower:block/bulb_rootlog"
+    },
+    "axis=z": {
+      "model": "bulb_flower:block/bulb_rootlog_horizontal",
+      "x": 90
     }
-
   }
-
 }

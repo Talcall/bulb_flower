@@ -10,6 +10,7 @@ public class BulbFlowerClient implements ClientModInitializer{
     @Environment(EnvType.CLIENT)
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BULB_ROOTS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BULB_SAPLING, RenderLayer.getCutout());
     }
 
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "bulb_flower:item/bulb_sapling"
+    "layer0": "bulb_flower:block/bulb_sapling"
   }
 }

@@ -1,14 +1,9 @@
 package net.t4lcall.bulb_flower.block;
 
-import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.client.render.RenderLayer;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -17,15 +12,22 @@ import net.minecraft.util.Identifier;
 import net.t4lcall.bulb_flower.BulbFlower;
 
 public class ModBlocks {
-
     public static final Block BULB_ROOTS = registerBlock("bulb_roots",
-            new Block(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS)));
-
-
+            new TransparentBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS)));
     public static final Block BULB_PLANKS = registerBlock("bulb_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block BULB_ROOTLOG = registerBlock("bulb_rootlog",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+    public static final Block BULB_ROOTWOOD = registerBlock("bulb_rootwood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_BULB_ROOTLOG = registerBlock("stripped_bulb_rootlog",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block STRIPPED_BULB_ROOTWOOD = registerBlock("stripped_bulb_rootwood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
+    public static final Block BULB_SAPLING = registerBlock("bulb_sapling",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block BULB_PISTIL = registerBlock("bulb_pistil",
+            new PlantBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, name), block);

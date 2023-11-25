@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "bulb_flower:block/stripped_bulb_rootlog_top",
+    "side": "bulb_flower:block/stripped_bulb_rootlog_side"
+  }
+}

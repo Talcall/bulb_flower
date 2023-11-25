@@ -14,13 +14,17 @@ import net.t4lcall.bulb_flower.block.ModBlocks;
 
 public class ModItems {
 
-    public static final Item BULB_SAPLING = registerItem("bulb_sapling", new Item(new FabricItemSettings()));
+    //public static final Item BULB_SAPLING = registerItem("bulb_sapling", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
-        entries.add(BULB_SAPLING);
+        entries.add(ModBlocks.BULB_SAPLING);
         entries.add(ModBlocks.BULB_ROOTS);
         entries.add(ModBlocks.BULB_PLANKS);
         entries.add(ModBlocks.BULB_ROOTLOG);
+        entries.add(ModBlocks.BULB_ROOTWOOD);
+        entries.add(ModBlocks.STRIPPED_BULB_ROOTLOG);
+        entries.add(ModBlocks.STRIPPED_BULB_ROOTWOOD);
+        entries.add(ModBlocks.BULB_PISTIL);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BulbFlower.MOD_ID, name), item);

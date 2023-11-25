@@ -1,6 +1,10 @@
 {
-  "item.bulb_flower.bulb_sapling": "Bulb Burgeon",
+  "block.bulb_flower.bulb_sapling": "Bulb Burgeon",
   "block.bulb_flower.bulb_roots": "Bulb Roots",
   "block.bulb_flower.bulb_planks": "Bulb Roots",
-  "block.bulb_flower.bulb_rootlog": "Bulb Lignin"
+  "block.bulb_flower.bulb_rootlog": "Bulb Peduncle",
+  "block.bulb_flower.stripped_bulb_rootlog": "Stripped Bulb Peduncle",
+  "block.bulb_flower.bulb_rootwood": "Bulb Lignin",
+  "block.bulb_flower.stripped_bulb_rootwood": "Stripped Bulb Lignin",
+  "block.bulb_flower.bulb_pistil": "Bulb Pistil"
 }
