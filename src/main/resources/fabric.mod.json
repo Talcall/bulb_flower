@@ -5,7 +5,8 @@
 	"name": "bulb_flower",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Talcall"
+		"Talcall",
+		"Forseir"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
