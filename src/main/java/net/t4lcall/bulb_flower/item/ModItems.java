@@ -34,6 +34,7 @@ public class ModItems {
         entries.add(ModBlocks.BULB_PRESSURE_PLATE);
         entries.add(ModBlocks.BULB_FENCE);
         entries.add(ModBlocks.BULB_FENCE_GATE);
+        entries.add(ModBlocks.BULB_FROND);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BulbFlower.MOD_ID, name), item);
