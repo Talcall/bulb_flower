@@ -4,9 +4,6 @@ package net.t4lcall.bulb_flower.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.sapling.MangroveSaplingGenerator;
-import net.minecraft.block.sapling.OakSaplingGenerator;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -14,7 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.t4lcall.bulb_flower.BulbFlower;
-import net.t4lcall.bulb_flower.util.BulbSaplingGenerator;
+import net.t4lcall.bulb_flower.world.tree.BulbSaplingGenerator;
 
 public class ModBlocks {
     public static final Block BULB_ROOTS = registerBlock("bulb_roots",
@@ -29,7 +26,7 @@ public class ModBlocks {
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).noCollision(), BlockSetType.OAK, 30, true));
     public static final Block BULB_PRESSURE_PLATE = registerBlock("bulb_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).noCollision(), BlockSetType.OAK));
     public static final Block BULB_FENCE = registerBlock("bulb_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block BULB_FENCE_GATE = registerBlock("bulb_fence_gate",
@@ -46,8 +43,8 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
     public static final Block STRIPPED_BULB_ROOTWOOD = registerBlock("stripped_bulb_rootwood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
-    public static final Block BULB_SAPLING = registerBlock("bulb_sapling",
-            new SaplingBlock(new BulbSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    //public static final Block BULB_SAPLING = registerBlock("bulb_sapling",
+    //        new SaplingBlock(new BulbSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block ROOTED_END_STONE = registerBlock("rooted_end_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
     public static final Block BULB_PISTIL = registerBlock("bulb_pistil",
@@ -64,5 +61,10 @@ public class ModBlocks {
     }
     public static void registerModBlocks() {
         BulbFlower.LOGGER.info("Registering ModBlocks for" + BulbFlower.MOD_ID);
+    }
+    public static final BulbSaplingBlock BULB_SAPLING = new BulbSaplingBlock(new BulbSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING));
+    public static void registerModTree() {
+        Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID,"bulb_sapling"),BULB_SAPLING);
+        Registry.register(Registries.ITEM, new Identifier(BulbFlower.MOD_ID,"bulb_sapling"),new BlockItem(BULB_SAPLING, new FabricItemSettings()));
     }
 }

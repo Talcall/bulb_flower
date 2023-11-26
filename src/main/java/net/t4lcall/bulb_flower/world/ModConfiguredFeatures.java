@@ -1,9 +1,12 @@
 package net.t4lcall.bulb_flower.world;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
@@ -14,23 +17,18 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.t4lcall.bulb_flower.BulbFlower;
 import net.t4lcall.bulb_flower.block.ModBlocks;
 import net.minecraft.registry.RegistryEntryLookup;
+import net.t4lcall.bulb_flower.world.tree.custom.SingleTrunkPlacer;
 
 public class ModConfiguredFeatures {
-    public static final RegistryKey<ConfiguredFeature<?,?>> BULB_KEY = registerKey("bulb");
-
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BULB_KEY = registerKey("bulb_tree");
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
-        RegistryEntryLookup<Block> registryEntryLookup = context.getRegistryLookup(RegistryKeys.BLOCK);
-        register(context,
-                BULB_KEY,
-                Feature.TREE,
-                new TreeFeatureConfig.Builder(BlockStateProvider.of(ModBlocks.BULB_ROOTLOG),
-                        new StraightTrunkPlacer(1,0,0),
-                        BlockStateProvider.of(ModBlocks.BULB_ROOTS),
-                        new BlobFoliagePlacer(ConstantIntProvider.create(1),ConstantIntProvider.create(0),1),
-                        new TwoLayersFeatureSize(0, 0, 0))
-                        .build());
+        register(context, BULB_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.BULB_ROOTLOG),
+                new SingleTrunkPlacer(1, 0, 0),
+                BlockStateProvider.of(ModBlocks.BULB_ROOTS),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
+                new TwoLayersFeatureSize(1, 0,2)).build());
     }
-
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(BulbFlower.MOD_ID, name));
     }

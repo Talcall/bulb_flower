@@ -1,9 +1,10 @@
-package net.t4lcall.bulb_flower.util;
+package net.t4lcall.bulb_flower.world.tree;
 
 import net.minecraft.block.sapling.SaplingGenerator;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.TreeFeatureConfig;
 import net.t4lcall.bulb_flower.world.ModConfiguredFeatures;
 import org.jetbrains.annotations.Nullable;
 
