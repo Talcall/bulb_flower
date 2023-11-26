@@ -19,6 +19,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BULB_SAPLING);
         addDrop(ModBlocks.BULB_STAIRS);
         addDrop(ModBlocks.BULB_PISTIL);
+        addDrop(ModBlocks.BULB_FROND);
         addDrop(ModBlocks.BULB_BUTTON);
         addDrop(ModBlocks.BULB_PRESSURE_PLATE);
         addDrop(ModBlocks.BULB_TRAPDOOR);

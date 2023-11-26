@@ -26,7 +26,7 @@ public class ModBlocks {
     public static final Block BULB_SLAB = registerBlock("bulb_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block BULB_BUTTON = registerBlock("bulb_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).noCollision(), BlockSetType.OAK, 15, true));
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).noCollision(), BlockSetType.OAK, 30, true));
     public static final Block BULB_PRESSURE_PLATE = registerBlock("bulb_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
@@ -47,7 +47,7 @@ public class ModBlocks {
     public static final Block STRIPPED_BULB_ROOTWOOD = registerBlock("stripped_bulb_rootwood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
     public static final Block BULB_SAPLING = registerBlock("bulb_sapling",
-            new SaplingBlock(new BulbSaplingGenerator(0f), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            new SaplingBlock(new BulbSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block ROOTED_END_STONE = registerBlock("rooted_end_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
     public static final Block BULB_PISTIL = registerBlock("bulb_pistil",
