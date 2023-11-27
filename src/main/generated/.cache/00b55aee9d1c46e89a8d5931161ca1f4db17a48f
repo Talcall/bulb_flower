@@ -1,3 +1,6 @@
-// 1.20.2	2023-11-26T21:59:04.0226615	bulb_flower/Tags for minecraft:block
+// 1.20.2	2023-11-27T22:18:39.997947	bulb_flower/Tags for minecraft:block
+d013a48235eb4c0029b3a5299123bdc37ca7e754 data\minecraft\tags\blocks\mineable\pickaxe.json
+8a7ce3bd55a40095e183946894ee342270a47ad0 data\minecraft\tags\blocks\mineable\axe.json
 bd3695a6650c1a20cdd3b82120b3cd01a3d5334e data\minecraft\tags\blocks\fences.json
 efd19371fe11a3f62b635e371e58710180ae42c2 data\minecraft\tags\blocks\fence_gates.json
+9bef658eec916018fd490a1463ac76029ce2d4ce data\bulb_flower\tags\blocks\bulb_root_replaceable_block.json

@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "bulb_flower:rooted_end_stone",
+    "bulb_flower:bulb_fence",
+    "bulb_flower:bulb_button",
+    "bulb_flower:bulb_fence_gate",
+    "bulb_flower:bulb_door",
+    "bulb_flower:bulb_planks",
+    "bulb_flower:bulb_pressure_plate",
+    "bulb_flower:bulb_rootlog",
+    "bulb_flower:bulb_roots",
+    "bulb_flower:bulb_rootwood",
+    "bulb_flower:bulb_slab",
+    "bulb_flower:bulb_stairs",
+    "bulb_flower:bulb_trapdoor",
+    "bulb_flower:stripped_bulb_rootlog",
+    "bulb_flower:stripped_bulb_rootwood"
+  ]
+}

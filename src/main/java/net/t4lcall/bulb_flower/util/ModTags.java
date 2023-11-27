@@ -14,5 +14,7 @@ public final class ModTags {
         private static TagKey<Block> createTag(String name){
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(BulbFlower.MOD_ID, name));
         }
+        public static final TagKey<Block> BULB_ROOT_REPLACEABLE_BLOCKS =
+                createTag("bulb_root_replaceable_block");
     }
   }

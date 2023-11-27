@@ -18,7 +18,7 @@ public class ModPlacedFeatures {
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         register(context, BULB_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow((ModConfiguredFeatures.BULB_KEY)
-        ), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(2, 0.1f, 2),
+        ), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(2, 0.2f, 3),
                         ModBlocks.BULB_SAPLING));
 
     }
