@@ -38,8 +38,6 @@ public class ModBlockTagProvider  extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.END_STONE).add(ModBlocks.ROOTED_END_STONE);
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ROOTED_END_STONE);
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.ROOTED_END_STONE);
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.BULB_FENCE)
                 .add(ModBlocks.BULB_BUTTON)

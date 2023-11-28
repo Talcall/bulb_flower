@@ -30,6 +30,9 @@ public class RootedStoneBlock extends Block {
             RootedStoneBlock.dropStack(world, pos, new ItemStack(Blocks.END_STONE, 1));
             world.setBlockState(pos, Blocks.END_STONE.getDefaultState());
         }
+        if(player.getMainHandStack().isIn(ItemTags.PICKAXES)){
+            RootedStoneBlock.dropStack(world, pos, new ItemStack(ModBlocks.ROOTED_END_STONE, 1));
+        }
         super.onBreak(world, pos, this.getDefaultState(), player);
     }
 }
