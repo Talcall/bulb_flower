@@ -39,12 +39,12 @@ public class RootedStoneBlock extends Block {
     }
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (!player.getStackInHand(hand).isIn(ItemTags.HOES)) {
-            return ActionResult.PASS;
-        }
-        if (player.getStackInHand(hand).isIn(ItemTags.HOES)) {
+        ItemStack itemStack = player.getStackInHand(hand);
+        if(player.getStackInHand(hand).isIn(ItemTags.HOES)){
+            world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.BLOCK_BEEHIVE_SHEAR, SoundCategory.BLOCKS, 0.8f, 1.5f);
+            itemStack.damage(1, player, playerx -> playerx.sendToolBreakStatus(hand));
             RootedStoneBlock.dropStack(world, pos, new ItemStack(ModBlocks.BULB_ROOTS, 1));
-            world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.BLOCK_BEEHIVE_SHEAR, SoundCategory.BLOCKS, 1f, 1.75f);
+            player.incrementStat(Stats.USED.getOrCreateStat(itemStack.getItem()));
             world.setBlockState(pos, Blocks.END_STONE.getDefaultState());
             return ActionResult.success(world.isClient);
         }
