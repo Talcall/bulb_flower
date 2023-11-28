@@ -48,9 +48,9 @@ public class ModBlocks {
     public static final Block ROOTED_END_STONE = registerBlock("rooted_end_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
     public static final Block BULB_PISTIL = registerBlock("bulb_pistil",
-            new PistilBlock(StatusEffects.LEVITATION,80,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).luminance(state -> 5).noCollision()));
+            new PistilBlock(StatusEffects.LEVITATION,80,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).luminance(state -> 5).noCollision().hardness(0f)));
     public static final Block BULB_FROND = registerBlock("bulb_frond",
-            new PetalBlock(StatusEffects.LEVITATION,80,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).noCollision()));
+            new PetalBlock(StatusEffects.LEVITATION,80,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).noCollision().hardness(0f)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, name), block);

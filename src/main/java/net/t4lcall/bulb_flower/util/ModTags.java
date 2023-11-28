@@ -25,7 +25,7 @@ public final class ModTags {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(BulbFlower.MOD_ID, name));
         }
 
-        public static final TagKey<Item> BULB_LOG =
-                createTag("bulb_log");
+        //public static final TagKey<Item> BULB_LOG =
+        //        createTag("bulb_log");
     }
   }
