@@ -1,4 +1,4 @@
-// 1.20.2	2023-11-28T14:51:04.4353343	bulb_flower/Block Loot Tables
+// 1.20.2	2023-11-28T15:03:49.6015823	bulb_flower/Block Loot Tables
 56f47146bbe9decebc0e8bf891f4c46f533af46d data\bulb_flower\loot_tables\blocks\bulb_stairs.json
 c6afb977ac3fcc5e1fdc4f71204768f61498a570 data\bulb_flower\loot_tables\blocks\bulb_trapdoor.json
 99ce4bad4fba73b9267fd405f4bce0a842b4fb60 data\bulb_flower\loot_tables\blocks\bulb_slab.json
@@ -8,6 +8,7 @@ a7d6c51655f73d6f7dcc36a1304c90fd2fa1eafc data\bulb_flower\loot_tables\blocks\bul
 fc667c8c0fb42ea97256ce08cce16baef1048a4c data\bulb_flower\loot_tables\blocks\bulb_button.json
 d671258b4162ca5d7fe6bb7e80604927cf0c9967 data\bulb_flower\loot_tables\blocks\bulb_pistil.json
 89e61f2f1c86c585a94df1304d23b63d2fd88ac2 data\bulb_flower\loot_tables\blocks\bulb_frond.json
+c8a6fe7a32436d21e36d8f065f9c7d44d5b3b02e data\bulb_flower\loot_tables\blocks\rooted_end_stone.json
 88010db9006716cf0784e1b7a6ace08362d0b376 data\bulb_flower\loot_tables\blocks\bulb_sapling.json
 14a4669f9c5dd6e5fefee84f8489281c70feaf70 data\bulb_flower\loot_tables\blocks\bulb_fence_gate.json
 7b707f38174207bd112523162c64796b0d8d7f8f data\bulb_flower\loot_tables\blocks\bulb_pressure_plate.json
