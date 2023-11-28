@@ -54,7 +54,10 @@ public class ModBlockTagProvider  extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_BULB_ROOTLOG)
                 .add(ModBlocks.STRIPPED_BULB_ROOTWOOD);
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
-                .add(ModBlocks.ROOTED_END_STONE);
+                .add(ModBlocks.ROOTED_END_STONE)
+                .add(ModBlocks.BULB_ROOTS)
+                .add(ModBlocks.BULB_PISTIL)
+                .add(ModBlocks.BULB_FROND);
         getOrCreateTagBuilder(ModTags.Blocks.BULB_LOGS)
                 .add(ModBlocks.BULB_ROOTLOG)
                 .add(ModBlocks.BULB_ROOTWOOD)

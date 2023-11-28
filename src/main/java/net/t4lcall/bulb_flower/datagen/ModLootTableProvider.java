@@ -28,6 +28,5 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BULB_DOOR, doorDrops(ModBlocks.BULB_DOOR));
         addDrop(ModBlocks.BULB_SLAB, slabDrops(ModBlocks.BULB_SLAB));
 
-
     }
 }
