@@ -29,6 +29,7 @@ public class ModModelProvider extends FabricModelProvider {
         bulbPlanks.pressurePlate(ModBlocks.BULB_PRESSURE_PLATE);
         blockStateModelGenerator.registerDoor(ModBlocks.BULB_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.BULB_TRAPDOOR);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BULB_SAPLING, ModBlocks.POTTED_BULB_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

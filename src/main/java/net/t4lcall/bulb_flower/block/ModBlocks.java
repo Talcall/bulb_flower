@@ -10,6 +10,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlag;
 import net.minecraft.util.Identifier;
 import net.t4lcall.bulb_flower.BulbFlower;
 import net.t4lcall.bulb_flower.world.tree.BulbSaplingGenerator;
@@ -49,9 +50,13 @@ public class ModBlocks {
     public static final Block ROOTED_END_STONE = registerBlock("rooted_end_stone",
             new RootedStoneBlock(FabricBlockSettings.copyOf(Blocks.END_STONE)));
     public static final Block BULB_PISTIL = registerBlock("bulb_pistil",
-            new PistilBlock(StatusEffects.LEVITATION,80,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).luminance(state -> 5).noCollision().hardness(0f)));
+            new PistilBlock(StatusEffects.LEVITATION,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).luminance(state -> 5).noCollision().hardness(0f)));
     public static final Block BULB_FROND = registerBlock("bulb_frond",
-            new PetalBlock(StatusEffects.LEVITATION,80,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).noCollision().hardness(0f)));
+            new PetalBlock(StatusEffects.LEVITATION,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).noCollision().hardness(0f)));
+    public static final Block BULB_SAPLING = registerBlock("bulb_sapling",
+            new BulbSaplingBlock(new BulbSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block POTTED_BULB_SAPLING = Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, "potted_bulb_sapling"),
+            new FlowerPotBlock(BULB_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, name), block);
@@ -63,11 +68,7 @@ public class ModBlocks {
     public static void registerModBlocks() {
         BulbFlower.LOGGER.info("Registering ModBlocks for" + BulbFlower.MOD_ID);
     }
-    public static final BulbSaplingBlock BULB_SAPLING = new BulbSaplingBlock(new BulbSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING));
-    public static void registerModTree() {
-        Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID,"bulb_sapling"),BULB_SAPLING);
-        Registry.register(Registries.ITEM, new Identifier(BulbFlower.MOD_ID,"bulb_sapling"),new BlockItem(BULB_SAPLING, new FabricItemSettings()));
-    }
+
 
     public static void registerModStripped() {
         StrippableBlockRegistry.register(ModBlocks.BULB_ROOTLOG, ModBlocks.STRIPPED_BULB_ROOTLOG);
