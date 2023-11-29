@@ -10,14 +10,13 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.resource.featuretoggle.FeatureFlag;
 import net.minecraft.util.Identifier;
 import net.t4lcall.bulb_flower.BulbFlower;
 import net.t4lcall.bulb_flower.world.tree.BulbSaplingGenerator;
 
 public class ModBlocks {
     public static final Block BULB_ROOTS = registerBlock("bulb_roots",
-            new TransparentBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS)));
+            new MangroveRootsBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS)));
     public static final Block BULB_PLANKS = registerBlock("bulb_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block BULB_STAIRS = registerBlock("bulb_stairs",
