@@ -29,6 +29,10 @@ public class ModItems {
         entries.add(ModBlocks.BULB_STAIRS);
         entries.add(ModBlocks.BULB_FENCE);
         entries.add(ModBlocks.BULB_FENCE_GATE);
+        entries.add(ModBlocks.BULB_DOOR);
+        entries.add(ModBlocks.BULB_TRAPDOOR);
+        entries.add(ModBlocks.BULB_PRESSURE_PLATE);
+        entries.add(ModBlocks.BULB_BUTTON);
     }
     private static void addItemsToNaturalBlocksItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.BULB_ROOTS);
