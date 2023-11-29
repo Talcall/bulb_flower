@@ -21,6 +21,7 @@ public class BulbFlower implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlocks.registerModTree();
+		ModBlocks.registerModStripped();
 		ModWorldGeneration.generateModWorldGen();
 		ModTrunkPlacerTypes.register();
 		ModFoliagePlacerTypes.register();

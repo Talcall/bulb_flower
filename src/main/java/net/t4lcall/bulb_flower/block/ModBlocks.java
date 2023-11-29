@@ -3,6 +3,7 @@ package net.t4lcall.bulb_flower.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
@@ -66,5 +67,10 @@ public class ModBlocks {
     public static void registerModTree() {
         Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID,"bulb_sapling"),BULB_SAPLING);
         Registry.register(Registries.ITEM, new Identifier(BulbFlower.MOD_ID,"bulb_sapling"),new BlockItem(BULB_SAPLING, new FabricItemSettings()));
+    }
+
+    public static void registerModStripped() {
+        StrippableBlockRegistry.register(ModBlocks.BULB_ROOTLOG, ModBlocks.STRIPPED_BULB_ROOTLOG);
+        StrippableBlockRegistry.register(ModBlocks.BULB_ROOTWOOD, ModBlocks.STRIPPED_BULB_ROOTWOOD);
     }
 }

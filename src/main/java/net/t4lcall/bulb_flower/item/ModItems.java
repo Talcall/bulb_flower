@@ -14,7 +14,7 @@ import net.t4lcall.bulb_flower.block.ModBlocks;
 
 public class ModItems {
 
-    //public static final Item BULB_SAPLING = registerItem("bulb_sapling", new Item(new FabricItemSettings()));
+    //public static final Item ICHOR = registerItem("bulb_sapling", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.BULB_SAPLING);
