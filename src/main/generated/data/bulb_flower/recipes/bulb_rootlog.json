@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "pattern": [
-    "##",
-    "##"
-  ],
   "key": {
     "#": {
       "item": "bulb_flower:bulb_roots"
     }
   },
+  "pattern": [
+    "##",
+    "##"
+  ],
   "result": {
-    "item": "bulb_flower:bulb_rootlog",
-    "count": 1
-  }
+    "item": "bulb_flower:bulb_rootlog"
+  },
+  "show_notification": true
 }

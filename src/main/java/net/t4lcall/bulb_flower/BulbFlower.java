@@ -4,6 +4,10 @@ import net.fabricmc.api.ModInitializer;
 
 import net.t4lcall.bulb_flower.block.ModBlocks;
 import net.t4lcall.bulb_flower.item.ModItems;
+import net.t4lcall.bulb_flower.world.gen.ModWorldGeneration;
+import net.t4lcall.bulb_flower.world.tree.ModFoliagePlacerTypes;
+import net.t4lcall.bulb_flower.world.tree.ModRootPlacerTypes;
+import net.t4lcall.bulb_flower.world.tree.ModTrunkPlacerTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,5 +20,10 @@ public class BulbFlower implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBlocks.registerModStripped();
+		ModWorldGeneration.generateModWorldGen();
+		ModTrunkPlacerTypes.register();
+		ModFoliagePlacerTypes.register();
+		ModRootPlacerTypes.register();
 	}
 }

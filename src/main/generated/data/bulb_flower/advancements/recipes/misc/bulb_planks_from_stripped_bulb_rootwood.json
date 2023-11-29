@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_bulb_rootwood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bulb_flower:stripped_bulb_rootwood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:bulb_planks_from_stripped_bulb_rootwood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_bulb_rootwood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:bulb_planks_from_stripped_bulb_rootwood"
+    ]
+  },
+  "sends_telemetry_event": false
+}

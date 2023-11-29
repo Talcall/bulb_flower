@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bulb_flower:rooted_end_stone",
+    "bulb_flower:bulb_roots",
+    "bulb_flower:bulb_pistil",
+    "bulb_flower:bulb_frond"
+  ]
+}

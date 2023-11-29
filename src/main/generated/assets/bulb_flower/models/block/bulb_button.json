@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "bulb_flower:block/bulb_planks"
+  }
+}

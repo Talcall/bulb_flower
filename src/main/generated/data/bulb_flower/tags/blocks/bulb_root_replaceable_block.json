@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:end_stone",
+    "bulb_flower:rooted_end_stone"
+  ]
+}

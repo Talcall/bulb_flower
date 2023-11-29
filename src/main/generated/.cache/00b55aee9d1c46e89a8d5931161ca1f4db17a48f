@@ -1,0 +1,20 @@
+// 1.20.2	2023-11-29T20:51:47.2340738	bulb_flower/Tags for minecraft:block
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\wall_hanging_signs.json
+f98cc240e3cb515a69c780b452df666bcc224634 data\minecraft\tags\blocks\flowers.json
+bd3695a6650c1a20cdd3b82120b3cd01a3d5334e data\minecraft\tags\blocks\wooden_fences.json
+d93adc940de4b2ced9ceccb2ea93d985ae0f414e data\minecraft\tags\blocks\wooden_slabs.json
+efd19371fe11a3f62b635e371e58710180ae42c2 data\minecraft\tags\blocks\fence_gates.json
+07340e38936b741b53e8847b97c71a480e4f96c9 data\minecraft\tags\blocks\wooden_stairs.json
+9bef658eec916018fd490a1463ac76029ce2d4ce data\bulb_flower\tags\blocks\bulb_root_replaceable_block.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\standing_signs.json
+8950806f4d486c756f5b7b633f95f7ad6bd50fa4 data\minecraft\tags\blocks\planks.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\wall_signs.json
+d013a48235eb4c0029b3a5299123bdc37ca7e754 data\minecraft\tags\blocks\mineable\pickaxe.json
+32a62ba874c273dd59f0c50a266de7434c83c3d7 data\bulb_flower\tags\blocks\bulb_log.json
+5b9c7419c973d08cfeae76c1fc35d01db3a8e263 data\minecraft\tags\blocks\mineable\axe.json
+f651b98e06199bd35a228dadf8c988b0276b1e73 data\minecraft\tags\blocks\mineable\hoe.json
+2fc3d3d00d37b60f93262a1436a64cd20e51aa35 data\minecraft\tags\blocks\wooden_pressure_plates.json
+2d4283a3b0606b3fb39f226a01fffceb97e4ee16 data\minecraft\tags\blocks\logs_that_burn.json
+a0f42ebc7f2a42d1129a10f5ccb86eb31032a35e data\minecraft\tags\blocks\wooden_trapdoors.json
+d2edbadea9b0ab568a034464c13e392d2e961513 data\minecraft\tags\blocks\wooden_buttons.json
+4c91779b54e413a8ca72e73a804006be173b93f0 data\minecraft\tags\blocks\wooden_doors.json

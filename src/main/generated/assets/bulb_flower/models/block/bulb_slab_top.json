@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "bulb_flower:block/bulb_planks",
+    "side": "bulb_flower:block/bulb_planks",
+    "top": "bulb_flower:block/bulb_planks"
+  }
+}
