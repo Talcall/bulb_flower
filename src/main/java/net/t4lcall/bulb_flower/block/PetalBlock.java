@@ -32,8 +32,10 @@ import net.t4lcall.bulb_flower.util.ModTags;
 public class PetalBlock extends FlowerBlock implements Fertilizable {
     public static final IntProperty AGE = Properties.AGE_1;
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
-    public PetalBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
+    private final Block saplingDrop;
+    public PetalBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings, Block saplingDrop) {
         super(suspiciousStewEffect, effectDuration, settings);
+        this.saplingDrop = saplingDrop;
         this.setDefaultState((BlockState)((BlockState)((BlockState)this.stateManager
                 .getDefaultState())
                 .with(AGE, 0))
@@ -102,7 +104,7 @@ public class PetalBlock extends FlowerBlock implements Fertilizable {
         }
         if (i > 0) {
             int j = 1 + world.random.nextInt(1);
-            SweetBerryBushBlock.dropStack(world, pos, new ItemStack(ModBlocks.BULB_SAPLING, 1));
+            SweetBerryBushBlock.dropStack(world, pos, new ItemStack(this.saplingDrop, 1));
             world.playSound(null, pos, SoundEvents.BLOCK_CAVE_VINES_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
             BlockState blockState = (BlockState)state.with(AGE, 0);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);

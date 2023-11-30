@@ -51,7 +51,7 @@ public class ModBlocks {
     public static final Block BULB_PISTIL = registerBlock("bulb_pistil",
             new PistilBlock(StatusEffects.LEVITATION,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).luminance(state -> 5).noCollision().hardness(0f)));
     public static final Block BULB_FROND = registerBlock("bulb_frond",
-            new PetalBlock(StatusEffects.LEVITATION,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).noCollision().hardness(0f)));
+            new PetalBlock(StatusEffects.LEVITATION,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).noCollision().hardness(0f), ModBlocks.BULB_SAPLING));
     public static final Block BULB_SAPLING = registerBlock("bulb_sapling",
             new BulbSaplingBlock(new BulbSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block POTTED_BULB_SAPLING = Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, "potted_bulb_sapling"),

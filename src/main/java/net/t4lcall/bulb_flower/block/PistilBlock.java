@@ -10,6 +10,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
@@ -17,9 +18,13 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 
+import java.util.List;
+
 public class PistilBlock extends FlowerBlock {
+    private final StatusEffect blockEffects;
     public PistilBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
         super(suspiciousStewEffect, effectDuration, settings);
+        this.blockEffects = suspiciousStewEffect;
     }
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context){
@@ -33,11 +38,8 @@ public class PistilBlock extends FlowerBlock {
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         LivingEntity livingEntity;
-        if (world.isClient || world.getDifficulty() == Difficulty.PEACEFUL) {
-            return;
-        }
         if (entity instanceof LivingEntity && !((livingEntity = (LivingEntity)entity).isSneaking() || (entity.getType().equals(EntityType.ENDERMAN)))) {
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 100));
+            livingEntity.addStatusEffect(new StatusEffectInstance(this.blockEffects, 100));
         }
     }
     public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
@@ -48,9 +50,10 @@ public class PistilBlock extends FlowerBlock {
                 areaEffectCloudEntity.setWaitTime(10);
                 areaEffectCloudEntity.setDuration(areaEffectCloudEntity.getDuration() / 2);
                 areaEffectCloudEntity.setRadiusGrowth(-areaEffectCloudEntity.getRadius() / (float)areaEffectCloudEntity.getDuration());
-                areaEffectCloudEntity.addEffect(new StatusEffectInstance(StatusEffects.LEVITATION));
+                areaEffectCloudEntity.addEffect(new StatusEffectInstance(this.blockEffects));
                 world.spawnEntity(areaEffectCloudEntity);
         }
         super.onBreak(world, pos, this.getDefaultState(), player);
     }
+
 }
