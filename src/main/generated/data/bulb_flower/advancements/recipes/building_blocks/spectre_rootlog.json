@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spectre_roots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bulb_flower:spectre_roots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bulb_flower:spectre_rootlog"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_spectre_roots"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bulb_flower:spectre_rootlog"
+    ]
+  },
+  "sends_telemetry_event": false
+}

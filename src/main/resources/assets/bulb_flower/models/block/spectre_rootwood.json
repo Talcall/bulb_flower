@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "bulb_flower:block/spectre_rootlog_side"
+  }
+}

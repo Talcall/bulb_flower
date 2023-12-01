@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_top",
+  "textures": {
+    "texture": "bulb_flower:block/spectre_trapdoor"
+  }
+}

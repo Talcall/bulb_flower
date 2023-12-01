@@ -16,5 +16,22 @@
   "block.bulb_flower.bulb_pressure_plate": "Bulb Pressure Plate",
   "block.bulb_flower.bulb_stairs": "Bulb Stairs",
   "block.bulb_flower.bulb_slab": "Bulb Slab",
-  "block.bulb_flower.bulb_frond": "Bulb Petal"
+  "block.bulb_flower.bulb_frond": "Bulb Petal",
+  "block.bulb_flower.spectre_sapling": "Spectre Burgeon",
+  "block.bulb_flower.spectre_roots": "Spectre Roots",
+  "block.bulb_flower.spectre_planks": "Spectre Planks",
+  "block.bulb_flower.spectre_rootlog": "Spectre Peduncle",
+  "block.bulb_flower.stripped_spectre_rootlog": "Stripped Spectre Peduncle",
+  "block.bulb_flower.spectre_rootwood": "Spectre Lignin",
+  "block.bulb_flower.stripped_spectre_rootwood": "Stripped Spectre Lignin",
+  "block.bulb_flower.spectre_pistil": "Spectre Pistil",
+  "block.bulb_flower.spectre_door": "Spectre Door",
+  "block.bulb_flower.spectre_button": "Spectre Button",
+  "block.bulb_flower.spectre_fence": "Spectre Fence",
+  "block.bulb_flower.spectre_fence_gate": "Spectre Fence Gate",
+  "block.bulb_flower.spectre_trapdoor": "Spectre Trapdoor",
+  "block.bulb_flower.spectre_pressure_plate": "Spectre Pressure Plate",
+  "block.bulb_flower.spectre_stairs": "Spectre Stairs",
+  "block.bulb_flower.spectre_slab": "Spectre Slab",
+  "block.bulb_flower.spectre_frond": "Spectre Petal"
 }

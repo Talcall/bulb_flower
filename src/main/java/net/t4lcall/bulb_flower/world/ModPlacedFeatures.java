@@ -15,11 +15,16 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> BULB_TREE_PLACED_KEY = registerKey("bulb_tree_placed");
+    public static final RegistryKey<PlacedFeature> SPECTRE_TREE_PLACED_KEY = registerKey("spectre_tree_placed");
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         register(context, BULB_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow((ModConfiguredFeatures.BULB_KEY)
-        ), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(2, 0.2f, 3),
+        ), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.05f, 2),
                         ModBlocks.BULB_SAPLING));
+        register(context, SPECTRE_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow((ModConfiguredFeatures.SPECTRE_KEY)
+        ), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(0, 0.1f, 4),
+                ModBlocks.SPECTRE_SAPLING));
+
 
     }
     public static RegistryKey<PlacedFeature> registerKey(String name) {

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "bulb_flower:block/spectre_rootwood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "bulb_flower:block/spectre_rootwood"
+    },
+    "axis=z": {
+      "model": "bulb_flower:block/spectre_rootwood",
+      "x": 90
+    }
+  }
+}

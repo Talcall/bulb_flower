@@ -30,6 +30,24 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.BULB_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.BULB_TRAPDOOR);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BULB_SAPLING, ModBlocks.POTTED_BULB_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool spectrePlanks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SPECTRE_PLANKS);
+        //blockStateModelGenerator.registerLog(ModBlocks.BULB_ROOTLOG);
+        //blockStateModelGenerator.registerLog(ModBlocks.BULB_ROOTWOOD);
+        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BULB_ROOTLOG);
+        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BULB_ROOTWOOD);
+        //blockStateModelGenerator.registerLog(ModBlocks.BULB_ROOTS);
+        //blockStateModelGenerator.registerLog(ModBlocks.ROOTED_END_STONE);
+        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BULB_ROOTWOOD);
+        spectrePlanks.stairs(ModBlocks.SPECTRE_STAIRS);
+        spectrePlanks.slab(ModBlocks.SPECTRE_SLAB);
+        spectrePlanks.button(ModBlocks.SPECTRE_BUTTON);
+        spectrePlanks.fence(ModBlocks.SPECTRE_FENCE);
+        spectrePlanks.fenceGate(ModBlocks.SPECTRE_FENCE_GATE);
+        spectrePlanks.pressurePlate(ModBlocks.SPECTRE_PRESSURE_PLATE);
+        blockStateModelGenerator.registerDoor(ModBlocks.SPECTRE_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.SPECTRE_TRAPDOOR);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SPECTRE_SAPLING, ModBlocks.POTTED_SPECTRE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

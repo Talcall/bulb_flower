@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bulb_flower:bulb_fence_gate"
+    "bulb_flower:bulb_fence_gate",
+    "bulb_flower:spectre_fence_gate"
   ]
 }

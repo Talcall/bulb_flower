@@ -1,3 +1,5 @@
-// 1.20.2	2023-11-29T20:51:47.2360681	bulb_flower/World Gen
-3a1ecf9738096eefd346f1468f1addb48b0673ee data\bulb_flower\worldgen\configured_feature\bulb_tree.json
-b4ce8f8110341946724c2780e69c725d7aa1554b data\bulb_flower\worldgen\placed_feature\bulb_tree_placed.json
+// 1.20.2	2023-12-01T20:10:34.0032032	bulb_flower/World Gen
+c27cf40f134937ae0843f6f742d6f8d955d5cd4d data\bulb_flower\worldgen\configured_feature\bulb_tree.json
+5bc5ba824ca3e819b43ada29d66f0615ad8fc48a data\bulb_flower\worldgen\configured_feature\spectre_tree.json
+c6c438ddc6af59a7c3cd6d2c596c9247db2f3a90 data\bulb_flower\worldgen\placed_feature\spectre_tree_placed.json
+544c1133eb8d43f74bc68674ef954365ffaa4e17 data\bulb_flower\worldgen\placed_feature\bulb_tree_placed.json

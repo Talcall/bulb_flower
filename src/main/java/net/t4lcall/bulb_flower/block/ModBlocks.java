@@ -13,6 +13,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.t4lcall.bulb_flower.BulbFlower;
 import net.t4lcall.bulb_flower.world.tree.BulbSaplingGenerator;
+import net.t4lcall.bulb_flower.world.tree.SpectreSaplingGenerator;
 
 public class ModBlocks {
     public static final Block BULB_ROOTS = registerBlock("bulb_roots",
@@ -50,12 +51,52 @@ public class ModBlocks {
             new RootedStoneBlock(FabricBlockSettings.copyOf(Blocks.END_STONE)));
     public static final Block BULB_PISTIL = registerBlock("bulb_pistil",
             new PistilBlock(StatusEffects.LEVITATION,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).luminance(state -> 5).noCollision().hardness(0f)));
-    public static final Block BULB_FROND = registerBlock("bulb_frond",
-            new PetalBlock(StatusEffects.LEVITATION,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).noCollision().hardness(0f), ModBlocks.BULB_SAPLING));
     public static final Block BULB_SAPLING = registerBlock("bulb_sapling",
             new BulbSaplingBlock(new BulbSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block BULB_FROND = registerBlock("bulb_frond",
+            new PetalBlock(StatusEffects.LEVITATION,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).noCollision().hardness(0f), ModBlocks.BULB_SAPLING));
+
     public static final Block POTTED_BULB_SAPLING = Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, "potted_bulb_sapling"),
             new FlowerPotBlock(BULB_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
+
+    public static final Block SPECTRE_ROOTS = registerBlock("spectre_roots",
+            new MangroveRootsBlock(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS)));
+    public static final Block SPECTRE_PLANKS = registerBlock("spectre_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block SPECTRE_STAIRS = registerBlock("spectre_stairs",
+            new StairsBlock(ModBlocks.BULB_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block SPECTRE_SLAB = registerBlock("spectre_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block SPECTRE_BUTTON = registerBlock("spectre_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).noCollision(), BlockSetType.OAK, 30, true));
+    public static final Block SPECTRE_PRESSURE_PLATE = registerBlock("spectre_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).noCollision(), BlockSetType.OAK));
+    public static final Block SPECTRE_FENCE = registerBlock("spectre_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block SPECTRE_FENCE_GATE = registerBlock("spectre_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), WoodType.OAK));
+    public static final Block SPECTRE_DOOR = registerBlock("spectre_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
+    public static final Block SPECTRE_TRAPDOOR = registerBlock("spectre_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
+    public static final Block SPECTRE_ROOTLOG = registerBlock("spectre_rootlog",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+    public static final Block SPECTRE_ROOTWOOD = registerBlock("spectre_rootwood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_SPECTRE_ROOTLOG = registerBlock("stripped_spectre_rootlog",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block STRIPPED_SPECTRE_ROOTWOOD = registerBlock("stripped_spectre_rootwood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
+    public static final Block SPECTRE_PISTIL = registerBlock("spectre_pistil",
+            new PistilBlock(StatusEffects.SLOW_FALLING,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).luminance(state -> 5).noCollision().hardness(0f)));
+    public static final Block SPECTRE_SAPLING = registerBlock("spectre_sapling",
+            new BulbSaplingBlock(new SpectreSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block SPECTRE_FROND = registerBlock("spectre_frond",
+            new PetalBlock(StatusEffects.SLOW_FALLING,4,FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).noCollision().hardness(0f), ModBlocks.SPECTRE_SAPLING));
+
+    public static final Block POTTED_SPECTRE_SAPLING = Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, "potted_spectre_sapling"),
+            new FlowerPotBlock(SPECTRE_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(BulbFlower.MOD_ID, name), block);

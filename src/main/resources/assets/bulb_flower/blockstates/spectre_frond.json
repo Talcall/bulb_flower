@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "age=0,facing=north": {
+      "model": "bulb_flower:block/spectre_frond",
+      "y": 180
+    },
+    "age=0,facing=east": {
+      "model": "bulb_flower:block/spectre_frond",
+      "y": 270
+    },
+    "age=0,facing=south": {
+      "model": "bulb_flower:block/spectre_frond"
+
+    },
+    "age=0,facing=west": {
+      "model": "bulb_flower:block/spectre_frond",
+      "y": 90
+    },
+    "age=1,facing=north": {
+      "model": "bulb_flower:block/spectre_frond_1",
+      "y": 180
+    },
+    "age=1,facing=east": {
+      "model": "bulb_flower:block/spectre_frond_1",
+      "y": 270
+    },
+    "age=1,facing=south": {
+      "model": "bulb_flower:block/spectre_frond_1"
+    },
+    "age=1,facing=west": {
+      "model": "bulb_flower:block/spectre_frond_1",
+      "y": 90
+    }
+  }
+
+}

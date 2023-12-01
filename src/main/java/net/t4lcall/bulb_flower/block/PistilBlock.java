@@ -7,24 +7,24 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 
 import java.util.List;
 
 public class PistilBlock extends FlowerBlock {
     private final StatusEffect blockEffects;
+    private final List<SuspiciousStewIngredient.StewEffect> stewEffects;
     public PistilBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
         super(suspiciousStewEffect, effectDuration, settings);
         this.blockEffects = suspiciousStewEffect;
+        int i = suspiciousStewEffect.isInstant() ? effectDuration : effectDuration * 20;
+        this.stewEffects = List.of(new SuspiciousStewIngredient.StewEffect(suspiciousStewEffect, i));
     }
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context){
@@ -55,5 +55,8 @@ public class PistilBlock extends FlowerBlock {
         }
         super.onBreak(world, pos, this.getDefaultState(), player);
     }
-
+    @Override
+    public List<SuspiciousStewIngredient.StewEffect> getStewEffects() {
+        return this.stewEffects;
+    }
 }

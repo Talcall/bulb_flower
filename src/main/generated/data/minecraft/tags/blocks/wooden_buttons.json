@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bulb_flower:bulb_button"
+    "bulb_flower:bulb_button",
+    "bulb_flower:spectre_button"
   ]
 }

@@ -1,6 +1,6 @@
 package net.t4lcall.bulb_flower.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -33,6 +33,19 @@ public class ModItems {
         entries.add(ModBlocks.BULB_TRAPDOOR);
         entries.add(ModBlocks.BULB_PRESSURE_PLATE);
         entries.add(ModBlocks.BULB_BUTTON);
+        entries.add(ModBlocks.SPECTRE_ROOTLOG);
+        entries.add(ModBlocks.SPECTRE_ROOTWOOD);
+        entries.add(ModBlocks.STRIPPED_SPECTRE_ROOTLOG);
+        entries.add(ModBlocks.STRIPPED_SPECTRE_ROOTWOOD);
+        entries.add(ModBlocks.SPECTRE_PLANKS);
+        entries.add(ModBlocks.SPECTRE_SLAB);
+        entries.add(ModBlocks.SPECTRE_STAIRS);
+        entries.add(ModBlocks.SPECTRE_FENCE);
+        entries.add(ModBlocks.SPECTRE_FENCE_GATE);
+        entries.add(ModBlocks.SPECTRE_DOOR);
+        entries.add(ModBlocks.SPECTRE_TRAPDOOR);
+        entries.add(ModBlocks.SPECTRE_PRESSURE_PLATE);
+        entries.add(ModBlocks.SPECTRE_BUTTON);
     }
     private static void addItemsToNaturalBlocksItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.BULB_ROOTS);
@@ -42,6 +55,12 @@ public class ModItems {
         entries.add(ModBlocks.BULB_SAPLING);
         entries.add(ModBlocks.BULB_PISTIL);
         entries.add(ModBlocks.BULB_FROND);
+        entries.add(ModBlocks.SPECTRE_ROOTS);
+        entries.add(ModBlocks.SPECTRE_ROOTLOG);
+        entries.add(ModBlocks.SPECTRE_ROOTWOOD);
+        entries.add(ModBlocks.SPECTRE_SAPLING);
+        entries.add(ModBlocks.SPECTRE_PISTIL);
+        entries.add(ModBlocks.SPECTRE_FROND);
     }
     private static void addItemsToRedstoneItemGroup(FabricItemGroupEntries entries) {
         //entries.add(ModBlocks.BULB_BUTTON);

@@ -4,6 +4,9 @@
     "bulb_flower:rooted_end_stone",
     "bulb_flower:bulb_roots",
     "bulb_flower:bulb_pistil",
-    "bulb_flower:bulb_frond"
+    "bulb_flower:bulb_frond",
+    "bulb_flower:spectre_roots",
+    "bulb_flower:spectre_pistil",
+    "bulb_flower:spectre_frond"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column_horizontal",
+  "textures": {
+    "end": "bulb_flower:block/spectre_rootlog_top",
+    "side": "bulb_flower:block/spectre_rootlog_side"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "spectre_planks",
+  "ingredients": [
+    {
+      "item": "bulb_flower:spectre_rootlog"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "bulb_flower:spectre_planks"
+  }
+}

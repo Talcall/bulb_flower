@@ -14,6 +14,20 @@
     "bulb_flower:bulb_stairs",
     "bulb_flower:bulb_trapdoor",
     "bulb_flower:stripped_bulb_rootlog",
-    "bulb_flower:stripped_bulb_rootwood"
+    "bulb_flower:stripped_bulb_rootwood",
+    "bulb_flower:spectre_fence",
+    "bulb_flower:spectre_button",
+    "bulb_flower:spectre_fence_gate",
+    "bulb_flower:spectre_door",
+    "bulb_flower:spectre_planks",
+    "bulb_flower:spectre_pressure_plate",
+    "bulb_flower:spectre_rootlog",
+    "bulb_flower:spectre_roots",
+    "bulb_flower:spectre_rootwood",
+    "bulb_flower:spectre_slab",
+    "bulb_flower:spectre_stairs",
+    "bulb_flower:spectre_trapdoor",
+    "bulb_flower:stripped_spectre_rootlog",
+    "bulb_flower:stripped_spectre_rootwood"
   ]
 }

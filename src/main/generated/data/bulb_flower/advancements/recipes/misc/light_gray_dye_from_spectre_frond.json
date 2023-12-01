@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spectre_frond": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bulb_flower:spectre_frond"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:light_gray_dye_from_spectre_frond"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_spectre_frond"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:light_gray_dye_from_spectre_frond"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -10,5 +10,7 @@ public class ModTreeGeneration {
     public static void generateTrees() {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_HIGHLANDS, BiomeKeys.SMALL_END_ISLANDS),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BULB_TREE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_MIDLANDS),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SPECTRE_TREE_PLACED_KEY);
     }
 }

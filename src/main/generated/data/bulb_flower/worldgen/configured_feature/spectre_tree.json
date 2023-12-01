@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "bulb_flower:spectre_roots",
+        "Properties": {
+          "waterlogged": "false"
+        }
+      }
+    },
+    "foliage_placer": {
+      "type": "minecraft:big_spectre_flower_foliage_placer",
+      "height": 1,
+      "offset": 0,
+      "radius": 1
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "bulb_flower:spectre_pistil"
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": false,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 2
+    },
+    "root_placer": {
+      "type": "minecraft:bulb_root_placer",
+      "above_root_placement": {
+        "above_root_placement_chance": 0.0,
+        "above_root_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "bulb_flower:spectre_frond",
+            "Properties": {
+              "age": "0",
+              "facing": "north"
+            }
+          }
+        }
+      },
+      "bulb_root_placement": {
+        "can_grow_through": "#bulb_flower:bulb_root_replaceable_block",
+        "max_root_length": 6,
+        "max_root_width": 5,
+        "muddy_roots_in": [
+          "minecraft:end_stone",
+          "minecraft:end_stone"
+        ],
+        "muddy_roots_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:end_stone"
+          }
+        },
+        "random_skew_chance": 0.2
+      },
+      "root_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "bulb_flower:spectre_roots",
+          "Properties": {
+            "waterlogged": "false"
+          }
+        }
+      },
+      "trunk_offset_y": {
+        "type": "minecraft:uniform",
+        "value": {
+          "max_inclusive": 3,
+          "min_inclusive": 1
+        }
+      }
+    },
+    "trunk_placer": {
+      "type": "minecraft:single_trunk_placer",
+      "base_height": 1,
+      "height_rand_a": 1,
+      "height_rand_b": 2
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "bulb_flower:spectre_rootlog",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

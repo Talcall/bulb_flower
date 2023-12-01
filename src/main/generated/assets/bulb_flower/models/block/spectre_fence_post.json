@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "bulb_flower:block/spectre_planks"
+  }
+}

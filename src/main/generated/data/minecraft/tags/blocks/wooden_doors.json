@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bulb_flower:bulb_door"
+    "bulb_flower:bulb_door",
+    "bulb_flower:spectre_door"
   ]
 }

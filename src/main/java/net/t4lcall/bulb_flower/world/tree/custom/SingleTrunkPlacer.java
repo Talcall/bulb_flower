@@ -30,7 +30,7 @@ public class SingleTrunkPlacer extends TrunkPlacer {
 
     @Override
     public List<FoliagePlacer.TreeNode> generate(TestableWorld world, BiConsumer<BlockPos, BlockState> replacer, Random random, int height, BlockPos startPos, TreeFeatureConfig config) {
-        int height_ = 1;
+        int height_ = height;
                 for(int i = 0; i< height_; i++) {
                     getAndSetState(world, replacer, random, startPos.up(i), config);
                 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "bulb_flower:block/spectre_sapling"
+  }
+}

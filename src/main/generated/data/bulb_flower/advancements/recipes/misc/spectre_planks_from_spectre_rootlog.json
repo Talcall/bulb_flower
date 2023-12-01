@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spectre_rootlog": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bulb_flower:spectre_rootlog"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:spectre_planks_from_spectre_rootlog"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_spectre_rootlog"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:spectre_planks_from_spectre_rootlog"
+    ]
+  },
+  "sends_telemetry_event": false
+}

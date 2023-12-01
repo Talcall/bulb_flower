@@ -14,20 +14,20 @@ import net.minecraft.world.gen.foliage.FoliagePlacerType;
 import net.t4lcall.bulb_flower.block.ModBlocks;
 import net.t4lcall.bulb_flower.world.tree.ModFoliagePlacerTypes;
 
-public class BigFlowerFoliagePlacer extends FoliagePlacer {
-    public static final Codec<BigFlowerFoliagePlacer> CODEC = RecordCodecBuilder.create(bigFlowerFoliagePlacerInstance ->
-            fillFoliagePlacerFields(bigFlowerFoliagePlacerInstance).and(Codec.intRange(0, 12).fieldOf("height")
-                    .forGetter(instance -> instance.height)).apply(bigFlowerFoliagePlacerInstance, BigFlowerFoliagePlacer::new));
+public class BigSpectreFlowerFoliagePlacer extends FoliagePlacer {
+    public static final Codec<BigSpectreFlowerFoliagePlacer> CODEC = RecordCodecBuilder.create(bigSpectreFlowerFoliagePlacerInstance ->
+            fillFoliagePlacerFields(bigSpectreFlowerFoliagePlacerInstance).and(Codec.intRange(0, 12).fieldOf("height")
+                    .forGetter(instance -> instance.height)).apply(bigSpectreFlowerFoliagePlacerInstance, BigSpectreFlowerFoliagePlacer::new));
     private final int height;
 
-    public BigFlowerFoliagePlacer(IntProvider radius, IntProvider offset, int height) {
+    public BigSpectreFlowerFoliagePlacer(IntProvider radius, IntProvider offset, int height) {
         super(radius, offset);
         this.height = height;
     }
 
     @Override
     protected FoliagePlacerType<?> getType() {
-        return ModFoliagePlacerTypes.BIG_FLOWER_FOLIAGE_PLACER;
+        return ModFoliagePlacerTypes.BIG_SPECTRE_FLOWER_FOLIAGE_PLACER;
     }
 
     @Override
@@ -36,14 +36,20 @@ public class BigFlowerFoliagePlacer extends FoliagePlacer {
                             int foliageHeight, int radius, int offset) {
         placer.placeBlock(treeNode.getCenter(),
                 (BlockState)config.foliageProvider.get(random, treeNode.getCenter()));
-        placer.placeBlock(treeNode.getCenter().north(),
-                (BlockState) ModBlocks.BULB_FROND.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
-        placer.placeBlock(treeNode.getCenter().east(),
-                (BlockState) ModBlocks.BULB_FROND.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.EAST));
-        placer.placeBlock(treeNode.getCenter().south(),
-                (BlockState) ModBlocks.BULB_FROND.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.SOUTH));
-        placer.placeBlock(treeNode.getCenter().west(),
-                (BlockState) ModBlocks.BULB_FROND.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.WEST));
+        java.util.Random rand = new java.util.Random();
+        int o = rand.nextInt(100);
+        if(o > 50) {
+            placer.placeBlock(treeNode.getCenter().north(),
+                    (BlockState) ModBlocks.SPECTRE_FROND.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
+            placer.placeBlock(treeNode.getCenter().south(),
+                    (BlockState) ModBlocks.SPECTRE_FROND.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.SOUTH));
+        }
+        if (o <= 50) {
+            placer.placeBlock(treeNode.getCenter().east(),
+                    (BlockState) ModBlocks.SPECTRE_FROND.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.EAST));
+            placer.placeBlock(treeNode.getCenter().west(),
+                    (BlockState) ModBlocks.SPECTRE_FROND.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.WEST));
+        }
     }
 
     @Override

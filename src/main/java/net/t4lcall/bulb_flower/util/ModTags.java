@@ -3,7 +3,6 @@ package net.t4lcall.bulb_flower.util;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.t4lcall.bulb_flower.BulbFlower;
@@ -19,6 +18,8 @@ public final class ModTags {
                 createTag("petal_support_block");
         public static final TagKey<Block> BULB_LOGS =
                 createTag("bulb_log");
+        public static final TagKey<Block> SPECTRE_LOGS =
+                createTag("spectre_log");
     }
     public static class Items {
         private static TagKey<Item> createTag(String name){
