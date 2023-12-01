@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bulb_flower:spectre_rootlog",
+    "bulb_flower:spectre_rootwood",
+    "bulb_flower:stripped_spectre_rootlog",
+    "bulb_flower:stripped_spectre_rootwood"
+  ]
+}

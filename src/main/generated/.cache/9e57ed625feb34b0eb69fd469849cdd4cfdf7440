@@ -1,1 +1,16 @@
-// 1.20.2	2023-12-01T20:10:34.0022057	bulb_flower/Tags for minecraft:item
+// 1.20.2	2023-12-01T21:24:19.5601363	bulb_flower/Tags for minecraft:item
+79cbe79ca760b63b9f625336102b23978ce29090 data\minecraft\tags\items\wooden_fences.json
+08b8885ecdbd49bd730f8a4fd7933ecd3c9ec9b8 data\minecraft\tags\items\wooden_slabs.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\items\signs.json
+68be96a8737d80e6183e4107cd809886512fc785 data\minecraft\tags\items\planks.json
+32a62ba874c273dd59f0c50a266de7434c83c3d7 data\bulb_flower\tags\items\bulb_log.json
+f9a316cd16c1b769ec9660dad152484d2d34532e data\minecraft\tags\items\fence_gates.json
+370764c453026ab57371256baa24aaca399cfa36 data\minecraft\tags\items\logs_that_burn.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\items\hanging_signs.json
+8fa8076f279e2e8a25405614b7a84e2c65f1119a data\minecraft\tags\items\wooden_buttons.json
+8505755a9bf80f8062a5ddafb0b33dcbf3c65e50 data\minecraft\tags\items\small_flowers.json
+853de99d1a2596cd17750adb64ab9977ff40a3c4 data\minecraft\tags\items\wooden_stairs.json
+94aaa19f73b74474288127bce192427f3130ebb0 data\minecraft\tags\items\wooden_trapdoors.json
+2e347dfcbcd854da0ff5f89cd578ba72cd46562d data\bulb_flower\tags\items\spectre_log.json
+3e0dd008dfcac13770b88d47362398bda334be37 data\minecraft\tags\items\wooden_doors.json
+e782f2ad0f42d36761e21eb38b382230cdfc5d86 data\minecraft\tags\items\wooden_pressure_plates.json
