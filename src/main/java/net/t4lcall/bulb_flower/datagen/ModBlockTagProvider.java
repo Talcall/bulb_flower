@@ -110,7 +110,7 @@ public class ModBlockTagProvider  extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
                 //.add(ModBlocks.BULB_WALL_SIGN)
         ;
-        getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
+        getOrCreateTagBuilder(BlockTags.FLOWERS)
                 .add(ModBlocks.BULB_PISTIL)
                 .add(ModBlocks.SPECTRE_PISTIL);
     }

@@ -22,7 +22,7 @@ public class ModPlacedFeatures {
         ), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.05f, 2),
                         ModBlocks.BULB_SAPLING));
         register(context, SPECTRE_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow((ModConfiguredFeatures.SPECTRE_KEY)
-        ), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(0, 0.1f, 4),
+        ), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(0, 0.125f, 4),
                 ModBlocks.SPECTRE_SAPLING));
 
 

@@ -44,7 +44,7 @@ public class ModConfiguredFeatures {
         register(context, SPECTRE_KEY, Feature.TREE,
                 new TreeFeatureConfig.Builder(
                         BlockStateProvider.of(ModBlocks.SPECTRE_ROOTLOG),
-                        new SingleTrunkPlacer(1, 1, 2),
+                        new SingleTrunkPlacer(1, 2, 2),
                         BlockStateProvider.of(ModBlocks.SPECTRE_PISTIL),
                         new BigSpectreFlowerFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(0), 1),
                         Optional.of(new BulbRootPlacer(UniformIntProvider.create(1, 3), BlockStateProvider.of(ModBlocks.SPECTRE_ROOTS),
