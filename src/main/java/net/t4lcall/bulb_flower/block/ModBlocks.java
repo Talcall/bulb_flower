@@ -113,5 +113,7 @@ public class ModBlocks {
     public static void registerModStripped() {
         StrippableBlockRegistry.register(ModBlocks.BULB_ROOTLOG, ModBlocks.STRIPPED_BULB_ROOTLOG);
         StrippableBlockRegistry.register(ModBlocks.BULB_ROOTWOOD, ModBlocks.STRIPPED_BULB_ROOTWOOD);
+        StrippableBlockRegistry.register(ModBlocks.SPECTRE_ROOTLOG, ModBlocks.STRIPPED_SPECTRE_ROOTLOG);
+        StrippableBlockRegistry.register(ModBlocks.SPECTRE_ROOTWOOD, ModBlocks.STRIPPED_SPECTRE_ROOTWOOD);
     }
 }

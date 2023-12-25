@@ -16,6 +16,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BULB_ROOTS);
         addDrop(ModBlocks.BULB_ROOTLOG);
         addDrop(ModBlocks.BULB_ROOTWOOD);
+        addDrop(ModBlocks.STRIPPED_BULB_ROOTLOG);
+        addDrop(ModBlocks.STRIPPED_BULB_ROOTWOOD);
         //addDrop(ModBlocks.BULB_SAPLING);
         addDrop(ModBlocks.BULB_STAIRS);
         addDrop(ModBlocks.BULB_PISTIL);
@@ -34,6 +36,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SPECTRE_ROOTS);
         addDrop(ModBlocks.SPECTRE_ROOTLOG);
         addDrop(ModBlocks.SPECTRE_ROOTWOOD);
+        addDrop(ModBlocks.STRIPPED_SPECTRE_ROOTLOG);
+        addDrop(ModBlocks.STRIPPED_SPECTRE_ROOTWOOD);
         //addDrop(ModBlocks.SPECTRE_SAPLING);
         addDrop(ModBlocks.SPECTRE_STAIRS);
         addDrop(ModBlocks.SPECTRE_PISTIL);

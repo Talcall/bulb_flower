@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bulb_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bulb_flower:bulb_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bulb_flower:bulb_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bulb_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bulb_flower:bulb_stairs"
+    ]
+  },
+  "sends_telemetry_event": false
+}

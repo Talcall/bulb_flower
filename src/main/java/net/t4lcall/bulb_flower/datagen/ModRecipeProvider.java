@@ -25,14 +25,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapelessRecipe(exporter, Items.MAGENTA_DYE, ModBlocks.BULB_SAPLING, "magenta_dye", 1);
         offerShapelessRecipe(exporter, Items.PURPLE_DYE, ModBlocks.BULB_FROND, "purple_dye", 2);
         offerShapelessRecipe(exporter, Items.PINK_DYE, ModBlocks.BULB_PISTIL, "pink_dye", 2);
-        createStairsRecipe(ModBlocks.BULB_STAIRS, Ingredient.ofItems(ModBlocks.BULB_PLANKS));
-        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BULB_SLAB, Ingredient.ofItems(ModBlocks.BULB_PLANKS));
-        createDoorRecipe(ModBlocks.BULB_DOOR, Ingredient.ofItems(ModBlocks.BULB_PLANKS));
+        createStairsRecipe(ModBlocks.BULB_STAIRS, Ingredient.ofItems(ModBlocks.BULB_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BULB_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.BULB_PLANKS)).offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BULB_SLAB, Ingredient.ofItems(ModBlocks.BULB_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BULB_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.BULB_PLANKS)).offerTo(exporter);
+        createDoorRecipe(ModBlocks.BULB_DOOR, Ingredient.ofItems(ModBlocks.BULB_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BULB_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.BULB_PLANKS)).offerTo(exporter);
         offerShapelessRecipe(exporter, ModBlocks.BULB_BUTTON, ModBlocks.BULB_PLANKS, "button", 1);
-        createTrapdoorRecipe(ModBlocks.BULB_TRAPDOOR, Ingredient.ofItems(ModBlocks.BULB_PLANKS));
-        createFenceRecipe(ModBlocks.BULB_FENCE, Ingredient.ofItems(ModBlocks.BULB_PLANKS));
-        createFenceGateRecipe(ModBlocks.BULB_FENCE_GATE, Ingredient.ofItems(ModBlocks.BULB_PLANKS));
-
+        createTrapdoorRecipe(ModBlocks.BULB_TRAPDOOR, Ingredient.ofItems(ModBlocks.BULB_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BULB_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.BULB_PLANKS)).offerTo(exporter);
+        createFenceRecipe(ModBlocks.BULB_FENCE, Ingredient.ofItems(ModBlocks.BULB_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BULB_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.BULB_PLANKS)).offerTo(exporter);
+        createFenceGateRecipe(ModBlocks.BULB_FENCE_GATE, Ingredient.ofItems(ModBlocks.BULB_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BULB_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.BULB_PLANKS)).offerTo(exporter);
 
         offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPECTRE_ROOTLOG, ModBlocks.SPECTRE_ROOTS);
         offerBarkBlockRecipe(exporter, ModBlocks.SPECTRE_ROOTWOOD, ModBlocks.SPECTRE_ROOTLOG);
@@ -44,12 +43,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapelessRecipe(exporter, Items.LIGHT_BLUE_DYE, ModBlocks.SPECTRE_SAPLING, "light_blue_dye", 1);
         offerShapelessRecipe(exporter, Items.LIGHT_GRAY_DYE, ModBlocks.SPECTRE_FROND, "light_gray_dye", 2);
         offerShapelessRecipe(exporter, Items.LIGHT_BLUE_DYE, ModBlocks.SPECTRE_PISTIL, "light_blue_dye", 2);
-        createStairsRecipe(ModBlocks.SPECTRE_STAIRS, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS));
-        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPECTRE_SLAB, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS));
-        createDoorRecipe(ModBlocks.SPECTRE_DOOR, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS));
+        createStairsRecipe(ModBlocks.SPECTRE_STAIRS, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SPECTRE_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.SPECTRE_PLANKS)).offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPECTRE_SLAB, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SPECTRE_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.SPECTRE_PLANKS)).offerTo(exporter);
+        createDoorRecipe(ModBlocks.SPECTRE_DOOR, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SPECTRE_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.SPECTRE_PLANKS)).offerTo(exporter);
         offerShapelessRecipe(exporter, ModBlocks.SPECTRE_BUTTON, ModBlocks.SPECTRE_PLANKS, "button", 1);
-        createTrapdoorRecipe(ModBlocks.SPECTRE_TRAPDOOR, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS));
-        createFenceRecipe(ModBlocks.SPECTRE_FENCE, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS));
-        createFenceGateRecipe(ModBlocks.SPECTRE_FENCE_GATE, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS));
+        createTrapdoorRecipe(ModBlocks.SPECTRE_TRAPDOOR, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SPECTRE_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.SPECTRE_PLANKS)).offerTo(exporter);
+        createFenceRecipe(ModBlocks.SPECTRE_FENCE, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SPECTRE_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.SPECTRE_PLANKS)).offerTo(exporter);
+        createFenceGateRecipe(ModBlocks.SPECTRE_FENCE_GATE, Ingredient.ofItems(ModBlocks.SPECTRE_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SPECTRE_PLANKS), FabricRecipeProvider.conditionsFromItem(ModBlocks.SPECTRE_PLANKS)).offerTo(exporter);
     }
 }
